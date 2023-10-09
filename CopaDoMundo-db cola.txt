@@ -1,0 +1,54 @@
+CREATE TABLE POSICAO(
+id_Posicao int PRIMARY KEY AUTO_INCREMENT,
+    Nome varchar(30)
+
+);
+
+
+CREATE TABLE ATLETA(
+    id_Atleta int,
+Nome varchar(50),
+    DataNascimento date,
+    
+    id_Posicao int,
+    id_Pais int,
+    
+    FOREIGN KEY (id_Posicao) REFERENCES Posicao(id_Posicao),
+     FOREIGN KEY (id_Pais) REFERENCES Pais(id_Pais)
+    
+    
+);
+
+
+CREATE TABLE ESTADIO (
+id_Estadio int PRIMARY KEY AUTO_INCREMENT,
+    Nome varchar(50)
+);
+
+
+Nome-Tecnico
+Brasil-Tite
+Argentina-Juan Perez
+Colombia-Pablo Vilas
+França-Pierre Gasly
+Itália-Valentino Rossi
+Alemanha-Werner Frantz
+Japão-yuki Hiro
+Coreia do Sul-Kim Jung Seok
+Nigeria-Marrudem Eto
+Angola-Roberto Satos
+Marrocos-Mohamed Hadid
+
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Arena Fonte Nova');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Ilha do Retiro');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Engenhão');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Arena Corinthians');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Allianz Park');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Morumbi');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Beira-Rio');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Maracanã');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Arena Pantanal');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Arena Grêmio');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Mineirão');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','Vila Belmiro');
+INSERT INTO `estadio`(`id_Estadio`, `Nome`) VALUES ('[value-1]','São Januário');
