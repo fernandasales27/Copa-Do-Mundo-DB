@@ -157,7 +157,7 @@ INSERT INTO `atleta` (`id_Atleta`, `Nome`, `DataNascimento`, `id_Posicao`, `id_P
 (115, 'Matteo Rinaldi', '1989-04-02', 7, 5),
 (161, 'Soli Moretti', '1992-10-30', 5, 5),
 (117, 'Antonio Ferrari', '1990-05-27', 6, 5),
-(118 'Eleno Lombardi', '1995-09-15', 4, 5),
+(118, 'Eleno Lombardi', '1995-09-15', 4, 5),
 (119, 'Angelo Rossi', '1991-08-08', 3, 5),
 (120, 'Federico Martini', '1997-07-13', 7, 5),
 (121, 'Lukas Müller', '1991-07-06', 1, 6),
